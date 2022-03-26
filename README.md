@@ -1,5 +1,7 @@
 Bienvenue sur mon API : 
 
+Attention le fichier bdd.php permettant la connexion a la bdd n'est pas push pour des raisons de sécurité il vous faut donc réécrir la fonction getConnexion(); 
+
 Appels disponible :
 
 http://cogno.fr/produits

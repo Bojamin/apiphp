@@ -1,4 +1,5 @@
 <?php
+require_once("./bdd.php");
 
 function getProduits(){
     $pdo = getConnexion(); 
@@ -90,12 +91,10 @@ function getStatusOrder() {
     sendJSON($produits);
 }
 
-function getConnexion(){
-    return new PDO("mysql:host=db5006871333.hosting-data.io;dbname=dbs5673344;charset=utf8","dbu461292","fh_Wc.Gpw3u?Xz9@");
-}
-
 function sendJSON($infos){
     header("Access-Control-Allow-Origin: *");
     header("Content-Type: application/json");
     echo json_encode($infos,JSON_UNESCAPED_UNICODE);
 }
+
+?>
